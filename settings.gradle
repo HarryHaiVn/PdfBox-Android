@@ -1,1 +1,1 @@
-include ':library', ':sample'
+include ':library',':jp2', ':sample'
