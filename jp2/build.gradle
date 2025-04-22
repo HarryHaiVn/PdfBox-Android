@@ -36,34 +36,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'androidx.annotation:annotation:1.9.1'
     //testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-}
-
-//publish to a local Maven repository with the sources jar and all dependencies
-
-ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'JP2ForAndroid'
-
-    publishedGroupId = 'com.gemalto.jp2'
-    libraryName = 'JP2ForAndroid'
-    artifact = 'jp2-android'
-
-    libraryDescription = 'A JPEG-2000 image encoder/decoder for Android'
-
-    siteUrl = 'https://github.com/gemalto/JP2ForAndroid'
-    gitUrl = 'https://github.com/gemalto/JP2ForAndroid.git'
-
-    libraryVersion = "${android.defaultConfig.versionName}"
-
-    developerId = 'michal-dvorak-thales'
-    developerName = 'Michal Dvorak'
-    developerEmail = 'michal.dvorak@thalesgroup.com'
-
-    licenseName = 'The 2-Clause BSD License'
-    licenseUrl = 'https://opensource.org/licenses/BSD-2-Clause'
-    allLicenses = ["BSD-2-Clause"]
 }
