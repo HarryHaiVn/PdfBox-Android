@@ -8,7 +8,7 @@ buildscript {
         jcenter() // jp2-android
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.0' // Or the latest version
+        classpath 'com.android.tools.build:gradle:8.11.0' // Or the latest version
     }
 }
 
